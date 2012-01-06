@@ -20,7 +20,11 @@
 		</property>
 	</bean>
 
-	<!-- Creates an in-memory HSQLDB Database -->
-	<jdbc:embedded-database id="dataSource" />
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost/tagsobe"/>
+        <property name="username" value="tagsobe"/>
+        <property name="password" value="tagsobe"/>
+    </bean>
 	
 </beans>

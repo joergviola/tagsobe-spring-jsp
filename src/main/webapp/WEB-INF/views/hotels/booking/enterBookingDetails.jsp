@@ -40,7 +40,7 @@
 							Spring.addDecoration(new Spring.ElementDecoration({
 								elementId : "checkinDate",
 								widgetType : "dijit.form.DateTextBox",
-								widgetAttrs : { datePattern : "MM-dd-yyyy", required : true }}));  
+								widgetAttrs : { datePattern : "MM/dd/yyyy", required : true }}));  
 						</script>
 						
 					</div>
@@ -55,7 +55,7 @@
 							Spring.addDecoration(new Spring.ElementDecoration({
 								elementId : "checkoutDate",
 								widgetType : "dijit.form.DateTextBox",
-								widgetAttrs : { datePattern : "MM-dd-yyyy", required : true }}));  
+								widgetAttrs : { datePattern : "MM/dd/yyyy", required : true }}));  
 						</script>
 					</div>
 				</div>
@@ -95,29 +95,6 @@
 								widgetModule : "dijit.form.CheckBox",
 								widgetAttrs : { value : "false" }
 							}));
-						</script>
-					</div>
-				</div>
-				<div>
-					<div class="label span-4">
-						Amenities:
-					</div>
-					<div id="amenities" class="span-7 last">
-						<p>
-							<form:checkbox path="amenities" value="OCEAN_VIEW" label="Ocean View" />
-							<br />
-							<form:checkbox path="amenities" value="LATE_CHECKOUT" label="Late Checkout" />
-							<br />
-							<form:checkbox path="amenities" value="MINIBAR" label="Minibar" />
-						</p>
-						<script type="text/javascript">
-							dojo.query("#amenities input[type='checkbox']").forEach(function(element){
-								Spring.addDecoration(new Spring.ElementDecoration({
-									elementId: element.id,
-									widgetType : "dijit.form.CheckBox",
-									widgetAttrs : { checked : element.checked }
-								}));
-							});
 						</script>
 					</div>
 				</div>

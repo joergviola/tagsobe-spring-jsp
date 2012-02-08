@@ -34,10 +34,10 @@ public class Booking implements Serializable {
 
 	private Hotel hotel;
 
-	@DateTimeFormat(pattern="MM-dd-yyyy")
+	@DateTimeFormat(pattern="MM/dd/yyyy")
 	private Date checkinDate;
 
-	@DateTimeFormat(pattern="MM-dd-yyyy")
+	@DateTimeFormat(pattern="MM/dd/yyyy")
 	private Date checkoutDate;
 
 	private String creditCard;

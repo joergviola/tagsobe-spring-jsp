@@ -8,7 +8,7 @@
 
 	<http>
 		<!-- Authentication policy -->	
-		<form-login login-page="/users/login" login-processing-url="/users/login/authenticate" default-target-url="/hotels" authentication-failure-url="/users/login?login_error=1"/>
+		<form-login login-page="/users/login" login-processing-url="/users/login/authenticate" default-target-url="/hotels/search" authentication-failure-url="/users/login?login_error=1"/>
 		<logout logout-url="/users/logout" logout-success-url="/users/logoutSuccess"/>
 	</http>
 

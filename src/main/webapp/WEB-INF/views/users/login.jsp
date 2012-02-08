@@ -56,7 +56,7 @@
 				</script>
 			</p>
 			<p>
-				<button id="submit" type="submit">Login</button>
+				<button id="submit" type="submit">Account Login</button>
 				<script type="text/javascript">
 					Spring.addDecoration(new Spring.ValidateAllDecoration({event : 'onclick', elementId : 'submit'}));
 				</script>
